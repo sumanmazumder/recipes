@@ -1,0 +1,33 @@
+{
+    "logo":[
+        {
+            "img":"http://localhost:4200/assets/images/logo.jpg"
+        }
+    ],
+    "menu":[
+        {
+            "name": "Home",
+            "link": ""
+        },
+        {
+            "name": "cement",
+            "link": ""
+        },
+        {
+            "name": "Sand",
+            "link": ""
+        },
+        {
+            "name": "Iron Rod",
+            "link": ""
+        },
+        {
+            "name": "Stone Chips",
+            "link": ""
+        },
+        {
+            "name": "More",
+            "link": ""
+        }
+    ]
+}

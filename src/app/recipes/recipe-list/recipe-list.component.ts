@@ -6,8 +6,8 @@ import { ServicesService } from '../../services.service';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent implements OnInit {
-
-  constructor(private services: ServicesService) { }
+  public menu :any =[];
+  constructor(private services: ServicesService, ) { }
 
   ngOnInit() {
     this.getData();
@@ -16,9 +16,18 @@ export class RecipeListComponent implements OnInit {
   getData(){
     this.services.sportsType().then(
       result=>{
-        console.log(result);
+        if(result['status'] == 1){
+          console.log(result);
+          this.menu = result['values'];
+          console.log(this.menu);
+        }else{
+          console.log("error");
+        }
+        
       }
     )
   }
+  onNewRecipe(){
 
+  }
 }
